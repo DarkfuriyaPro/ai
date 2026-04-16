@@ -1,13 +1,22 @@
-# TODO CLI
+# Python Learning Projects
 
-Simple command line task manager written in Python.
+This repository contains my Python practice projects and CLI applications.
 
-## Features
-- Add tasks
-- Delete tasks
-- Show tasks
-- Save tasks to file
+## Projects
 
-## How to run
-```bash
+### 1. ToDoList
+Simple task manager with file storage.
+
+Run:
+
 python main.py
+
+### CLI Calculator
+Command line calculator using sys.argv.
+
+Run:
+
+python app.py add 10 5
+
+### 3. Basics
+Small exercises and learning scripts.
