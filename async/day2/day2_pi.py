@@ -14,14 +14,21 @@ async def fetch(url, session):
         except:
             print("Request failed")
 
+def process(results):
+    for r in results:
+        if r is not None: 
+            print(r)
+        else:
+            print("failed")
+
 async def main():
     async with aiohttp.ClientSession() as session:
         tasks = []
         for url in urls:
             tasks.append(fetch(url, session))
         results =  await asyncio.gather(*tasks)
+        process(results)
 
-        for r in results:
-            print(r)
+        
 
 asyncio.run(main())
